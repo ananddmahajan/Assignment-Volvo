@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE200AEF26D77E4900451BA2 /* AssignmentAppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */; };
+		CE200AFB26D7D37100451BA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200AFA26D7D37100451BA2 /* Utilities.swift */; };
+		CE200B0426D7E52900451BA2 /* AppDelegate+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200B0326D7E52900451BA2 /* AppDelegate+Location.swift */; };
+		CEB1A8AD26D7F888009FD4DE /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */; };
+		CEB1A8E326D7FE25009FD4DE /* Assignment_VolvoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8E226D7FE25009FD4DE /* Assignment_VolvoTests.swift */; };
+		CEB1A8ED26D8011C009FD4DE /* AssignmentTestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8EC26D8011C009FD4DE /* AssignmentTestingHelper.swift */; };
+		CEB1A8F726D815BB009FD4DE /* WeatherForecast.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB1A8F626D815BB009FD4DE /* WeatherForecast.json */; };
+		CEB1A8FA26D818A3009FD4DE /* WeatherForecast.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB1A8F626D815BB009FD4DE /* WeatherForecast.json */; };
+		CEB586B526D66F00005C1065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586B426D66F00005C1065 /* AppDelegate.swift */; };
+		CEB586B726D66F00005C1065 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586B626D66F00005C1065 /* SceneDelegate.swift */; };
+		CEB586B926D66F00005C1065 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586B826D66F00005C1065 /* CitiesViewController.swift */; };
+		CEB586BC26D66F00005C1065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB586BA26D66F00005C1065 /* Main.storyboard */; };
+		CEB586BE26D66F02005C1065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB586BD26D66F02005C1065 /* Assets.xcassets */; };
+		CEB586C126D66F02005C1065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB586BF26D66F02005C1065 /* LaunchScreen.storyboard */; };
+		CEB586CB26D67010005C1065 /* CitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586CA26D67010005C1065 /* CitiesViewModel.swift */; };
+		CEB586CE26D6709D005C1065 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586CD26D6709D005C1065 /* City.swift */; };
+		CEB586D126D6809D005C1065 /* CityWeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586D026D6809D005C1065 /* CityWeatherDetailsViewController.swift */; };
+		CEB586D426D683D4005C1065 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586D326D683D4005C1065 /* ServiceManager.swift */; };
+		CEB586DD26D68775005C1065 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586DC26D68775005C1065 /* ServiceRequest.swift */; };
+		CEB586E026D687F3005C1065 /* WeatherAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586DF26D687F3005C1065 /* WeatherAPIError.swift */; };
+		CEB586E526D69104005C1065 /* CityWeatherDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB586E426D69104005C1065 /* CityWeatherDetailsViewModel.swift */; };
+		D95D97EF54DC184811614F26 /* Pods_Assignment_Volvo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BD4D4C8C8A70FC2BFEAF24 /* Pods_Assignment_Volvo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEB1A8E526D7FE25009FD4DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB586A926D66EFF005C1065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB586B026D66EFF005C1065;
+			remoteInfo = "Assignment-Volvo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48BD4D4C8C8A70FC2BFEAF24 /* Pods_Assignment_Volvo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Volvo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		690CAF2E690E44A1F7916B3A /* Pods-Assignment-Volvo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-Volvo.release.xcconfig"; path = "Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo.release.xcconfig"; sourceTree = "<group>"; };
+		CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAppGlobal.swift; sourceTree = "<group>"; };
+		CE200AFA26D7D37100451BA2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CE200B0326D7E52900451BA2 /* AppDelegate+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Location.swift"; sourceTree = "<group>"; };
+		CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		CEB1A8E026D7FE25009FD4DE /* Assignment-VolvoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment-VolvoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB1A8E226D7FE25009FD4DE /* Assignment_VolvoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_VolvoTests.swift; sourceTree = "<group>"; };
+		CEB1A8E426D7FE25009FD4DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB1A8EC26D8011C009FD4DE /* AssignmentTestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentTestingHelper.swift; sourceTree = "<group>"; };
+		CEB1A8F626D815BB009FD4DE /* WeatherForecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeatherForecast.json; sourceTree = "<group>"; };
+		CEB586B126D66F00005C1065 /* Assignment-Volvo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment-Volvo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB586B426D66F00005C1065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB586B626D66F00005C1065 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEB586B826D66F00005C1065 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		CEB586BB26D66F00005C1065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB586BD26D66F02005C1065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB586C026D66F02005C1065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB586C226D66F02005C1065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB586CA26D67010005C1065 /* CitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModel.swift; sourceTree = "<group>"; };
+		CEB586CD26D6709D005C1065 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		CEB586D026D6809D005C1065 /* CityWeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherDetailsViewController.swift; sourceTree = "<group>"; };
+		CEB586D326D683D4005C1065 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		CEB586DC26D68775005C1065 /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		CEB586DF26D687F3005C1065 /* WeatherAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIError.swift; sourceTree = "<group>"; };
+		CEB586E426D69104005C1065 /* CityWeatherDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherDetailsViewModel.swift; sourceTree = "<group>"; };
+		D3478B8344407C5B78969F35 /* Pods-Assignment-Volvo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-Volvo.debug.xcconfig"; path = "Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB1A8DD26D7FE25009FD4DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB586AE26D66EFF005C1065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95D97EF54DC184811614F26 /* Pods_Assignment_Volvo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		158244E7B83F2ECE66552299 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48BD4D4C8C8A70FC2BFEAF24 /* Pods_Assignment_Volvo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		171142F511285CF3F5D917BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3478B8344407C5B78969F35 /* Pods-Assignment-Volvo.debug.xcconfig */,
+				690CAF2E690E44A1F7916B3A /* Pods-Assignment-Volvo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE200B0726D7E68100451BA2 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CE200AFA26D7D37100451BA2 /* Utilities.swift */,
+				CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CEB1A8E126D7FE25009FD4DE /* Assignment-VolvoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1A8E226D7FE25009FD4DE /* Assignment_VolvoTests.swift */,
+				CEB1A8F626D815BB009FD4DE /* WeatherForecast.json */,
+				CEB1A8E426D7FE25009FD4DE /* Info.plist */,
+				CEB1A8EC26D8011C009FD4DE /* AssignmentTestingHelper.swift */,
+			);
+			path = "Assignment-VolvoTests";
+			sourceTree = "<group>";
+		};
+		CEB586A826D66EFF005C1065 = {
+			isa = PBXGroup;
+			children = (
+				CEB586B326D66F00005C1065 /* Assignment-Volvo */,
+				CEB1A8E126D7FE25009FD4DE /* Assignment-VolvoTests */,
+				CEB586B226D66F00005C1065 /* Products */,
+				171142F511285CF3F5D917BF /* Pods */,
+				158244E7B83F2ECE66552299 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB586B226D66F00005C1065 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586B126D66F00005C1065 /* Assignment-Volvo.app */,
+				CEB1A8E026D7FE25009FD4DE /* Assignment-VolvoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB586B326D66F00005C1065 /* Assignment-Volvo */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586E726D69149005C1065 /* ViewModels */,
+				CEB586E926D691A0005C1065 /* ViewControllers */,
+				CEB586EC26D692E2005C1065 /* DataModels */,
+				CEB586C226D66F02005C1065 /* Info.plist */,
+				CE200B0726D7E68100451BA2 /* Global */,
+				CEB586EA26D691BD005C1065 /* Delegates */,
+				CEB586EB26D692D0005C1065 /* Resources */,
+				CEB586E826D69188005C1065 /* NetworkClient */,
+			);
+			path = "Assignment-Volvo";
+			sourceTree = "<group>";
+		};
+		CEB586E726D69149005C1065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586E426D69104005C1065 /* CityWeatherDetailsViewModel.swift */,
+				CEB586CA26D67010005C1065 /* CitiesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEB586E826D69188005C1065 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586DF26D687F3005C1065 /* WeatherAPIError.swift */,
+				CEB586DC26D68775005C1065 /* ServiceRequest.swift */,
+				CEB586D326D683D4005C1065 /* ServiceManager.swift */,
+				CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		CEB586E926D691A0005C1065 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586B826D66F00005C1065 /* CitiesViewController.swift */,
+				CEB586D026D6809D005C1065 /* CityWeatherDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEB586EA26D691BD005C1065 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586B626D66F00005C1065 /* SceneDelegate.swift */,
+				CEB586B426D66F00005C1065 /* AppDelegate.swift */,
+				CE200B0326D7E52900451BA2 /* AppDelegate+Location.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CEB586EB26D692D0005C1065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586BA26D66F00005C1065 /* Main.storyboard */,
+				CEB586BF26D66F02005C1065 /* LaunchScreen.storyboard */,
+				CEB586BD26D66F02005C1065 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEB586EC26D692E2005C1065 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEB586CD26D6709D005C1065 /* City.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB1A8DF26D7FE25009FD4DE /* Assignment-VolvoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB1A8E726D7FE25009FD4DE /* Build configuration list for PBXNativeTarget "Assignment-VolvoTests" */;
+			buildPhases = (
+				CEB1A8DC26D7FE25009FD4DE /* Sources */,
+				CEB1A8DD26D7FE25009FD4DE /* Frameworks */,
+				CEB1A8DE26D7FE25009FD4DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB1A8E626D7FE25009FD4DE /* PBXTargetDependency */,
+			);
+			name = "Assignment-VolvoTests";
+			productName = "Assignment-VolvoTests";
+			productReference = CEB1A8E026D7FE25009FD4DE /* Assignment-VolvoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEB586B026D66EFF005C1065 /* Assignment-Volvo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB586C526D66F02005C1065 /* Build configuration list for PBXNativeTarget "Assignment-Volvo" */;
+			buildPhases = (
+				00C7F63304B066AB634F0E78 /* [CP] Check Pods Manifest.lock */,
+				CEB586AD26D66EFF005C1065 /* Sources */,
+				CEB586AE26D66EFF005C1065 /* Frameworks */,
+				CEB586AF26D66EFF005C1065 /* Resources */,
+				B4E4B1F78673BB9EBE23276E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment-Volvo";
+			productName = "Assignment-Volvo";
+			productReference = CEB586B126D66F00005C1065 /* Assignment-Volvo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB586A926D66EFF005C1065 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					CEB1A8DF26D7FE25009FD4DE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CEB586B026D66EFF005C1065;
+					};
+					CEB586B026D66EFF005C1065 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = CEB586AC26D66EFF005C1065 /* Build configuration list for PBXProject "Assignment-Volvo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB586A826D66EFF005C1065;
+			productRefGroup = CEB586B226D66F00005C1065 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB586B026D66EFF005C1065 /* Assignment-Volvo */,
+				CEB1A8DF26D7FE25009FD4DE /* Assignment-VolvoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB1A8DE26D7FE25009FD4DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB1A8F726D815BB009FD4DE /* WeatherForecast.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB586AF26D66EFF005C1065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB586C126D66F02005C1065 /* LaunchScreen.storyboard in Resources */,
+				CEB586BE26D66F02005C1065 /* Assets.xcassets in Resources */,
+				CEB586BC26D66F00005C1065 /* Main.storyboard in Resources */,
+				CEB1A8FA26D818A3009FD4DE /* WeatherForecast.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C7F63304B066AB634F0E78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Assignment-Volvo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E4B1F78673BB9EBE23276E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB1A8DC26D7FE25009FD4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB1A8E326D7FE25009FD4DE /* Assignment_VolvoTests.swift in Sources */,
+				CEB1A8ED26D8011C009FD4DE /* AssignmentTestingHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB586AD26D66EFF005C1065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE200B0426D7E52900451BA2 /* AppDelegate+Location.swift in Sources */,
+				CE200AEF26D77E4900451BA2 /* AssignmentAppGlobal.swift in Sources */,
+				CEB586B926D66F00005C1065 /* CitiesViewController.swift in Sources */,
+				CEB586CE26D6709D005C1065 /* City.swift in Sources */,
+				CEB1A8AD26D7F888009FD4DE /* MockNetworkManager.swift in Sources */,
+				CEB586E526D69104005C1065 /* CityWeatherDetailsViewModel.swift in Sources */,
+				CE200AFB26D7D37100451BA2 /* Utilities.swift in Sources */,
+				CEB586CB26D67010005C1065 /* CitiesViewModel.swift in Sources */,
+				CEB586D126D6809D005C1065 /* CityWeatherDetailsViewController.swift in Sources */,
+				CEB586B526D66F00005C1065 /* AppDelegate.swift in Sources */,
+				CEB586DD26D68775005C1065 /* ServiceRequest.swift in Sources */,
+				CEB586E026D687F3005C1065 /* WeatherAPIError.swift in Sources */,
+				CEB586D426D683D4005C1065 /* ServiceManager.swift in Sources */,
+				CEB586B726D66F00005C1065 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB1A8E626D7FE25009FD4DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB586B026D66EFF005C1065 /* Assignment-Volvo */;
+			targetProxy = CEB1A8E526D7FE25009FD4DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEB586BA26D66F00005C1065 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB586BB26D66F00005C1065 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB586BF26D66F02005C1065 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB586C026D66F02005C1065 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB1A8E826D7FE25009FD4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Assignment-VolvoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comany.VolvoTests.Assignment-VolvoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment-Volvo.app/Assignment-Volvo";
+			};
+			name = Debug;
+		};
+		CEB1A8E926D7FE25009FD4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Assignment-VolvoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comany.VolvoTests.Assignment-VolvoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment-Volvo.app/Assignment-Volvo";
+			};
+			name = Release;
+		};
+		CEB586C326D66F02005C1065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEB586C426D66F02005C1065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB586C626D66F02005C1065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3478B8344407C5B78969F35 /* Pods-Assignment-Volvo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Assignment-Volvo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comany.Assignment-Volvo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB586C726D66F02005C1065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690CAF2E690E44A1F7916B3A /* Pods-Assignment-Volvo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Assignment-Volvo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comany.Assignment-Volvo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB1A8E726D7FE25009FD4DE /* Build configuration list for PBXNativeTarget "Assignment-VolvoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB1A8E826D7FE25009FD4DE /* Debug */,
+				CEB1A8E926D7FE25009FD4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB586AC26D66EFF005C1065 /* Build configuration list for PBXProject "Assignment-Volvo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB586C326D66F02005C1065 /* Debug */,
+				CEB586C426D66F02005C1065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB586C526D66F02005C1065 /* Build configuration list for PBXNativeTarget "Assignment-Volvo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB586C626D66F02005C1065 /* Debug */,
+				CEB586C726D66F02005C1065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB586A926D66EFF005C1065 /* Project object */;
+}
