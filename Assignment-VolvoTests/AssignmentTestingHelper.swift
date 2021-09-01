@@ -9,14 +9,14 @@ import Foundation
 @testable import Assignment_Volvo
 
 class AssignmentTestingHelper {
-    var cityArray: [City] {
+    var cityArray: [String] {
         return [
-            City(cityName: "Gothenburg"),
-            City(cityName: "Stockholm"),
-            City(cityName: "Mountain View"),
-            City(cityName: "London"),
-            City(cityName: "New York"),
-            City(cityName: "Berlin")
+            "Gothenburg",
+            "Stockholm",
+            "Mountain View",
+            "London",
+            "New York",
+            "Berlin"
             ]
     }
     

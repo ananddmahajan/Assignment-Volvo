@@ -23,7 +23,6 @@ class CityWeatherDetailsViewController: UIViewController {
 
 extension CityWeatherDetailsViewController {
     
-    
     /// Description - responsible to display weather forecast information on details screen.
     private func configureWeatherForecastView() {
             

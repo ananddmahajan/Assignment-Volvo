@@ -8,10 +8,6 @@
 import Foundation
 
 class CitiesViewModel {
-
-    
-    /// Description - City objects to display the names on list.
-//    var citites: [City] = City.cities
     
     let dispatchGroup = DispatchGroup()
 
@@ -25,7 +21,7 @@ class CitiesViewModel {
     ///   - earthId: weoid param.
     ///   - completion: success/failure block .
     func getWeatherForecastOfDate(with earthId: Int, completion: @escaping ( WeatherAPIError?) -> Void) {
-        let locationDayUrl = "https://www.metaweather.com/api/location/\(earthId)"
+        let locationDayUrl = "/api/location/\(earthId)"
         ServiceManager.shared().startRequest(service: CityWeatherMetadataService(with: locationDayUrl)) { [weak self] (result) in
             switch(result) {
             case .success(let forecastData):
@@ -61,7 +57,7 @@ class CitiesViewModel {
     }
     
     private func getLocationDetailsByCityName(cityName: String) {
-       let locationSearchUrl = "https://www.metaweather.com/api/location/search/?query=\(cityName)".encodedURLString!
+       let locationSearchUrl = "/api/location/search/?query=\(cityName)".encodedURLString!
        print(locationSearchUrl)
       ServiceManager.shared().startRequest(service: CityLocationDataService(with: locationSearchUrl)) { [weak self] (result) in
           switch(result) {

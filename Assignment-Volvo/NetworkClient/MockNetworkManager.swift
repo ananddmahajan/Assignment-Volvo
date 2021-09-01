@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 /// Description:  MockAPIClient class responsible for reading data from JSON file present in application bundle.
 
 class MockNetworkManager:APIServiceType {

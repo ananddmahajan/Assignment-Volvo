@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE200AEF26D77E4900451BA2 /* AssignmentAppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */; };
 		CE200AFB26D7D37100451BA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200AFA26D7D37100451BA2 /* Utilities.swift */; };
 		CEB1A8AD26D7F888009FD4DE /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */; };
 		CEB1A8E326D7FE25009FD4DE /* Assignment_VolvoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8E226D7FE25009FD4DE /* Assignment_VolvoTests.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		48BD4D4C8C8A70FC2BFEAF24 /* Pods_Assignment_Volvo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Volvo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		690CAF2E690E44A1F7916B3A /* Pods-Assignment-Volvo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-Volvo.release.xcconfig"; path = "Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo.release.xcconfig"; sourceTree = "<group>"; };
-		CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAppGlobal.swift; sourceTree = "<group>"; };
 		CE200AFA26D7D37100451BA2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		CEB1A8E026D7FE25009FD4DE /* Assignment-VolvoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment-VolvoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				CE200AFA26D7D37100451BA2 /* Utilities.swift */,
-				CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -371,7 +368,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE200AEF26D77E4900451BA2 /* AssignmentAppGlobal.swift in Sources */,
 				CEB586B926D66F00005C1065 /* CitiesViewController.swift in Sources */,
 				CEB586CE26D6709D005C1065 /* City.swift in Sources */,
 				CEB1A8AD26D7F888009FD4DE /* MockNetworkManager.swift in Sources */,

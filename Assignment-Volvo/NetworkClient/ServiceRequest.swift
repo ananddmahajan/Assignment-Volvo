@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct BaseURL {
+    static let baseURL = "https://www.metaweather.com/api/"
+}
+
  protocol Service {
     associatedtype DecodingType: Decodable
     var requestURL: String {get}
@@ -15,8 +19,12 @@ import Foundation
 
 extension Service {
     
+    var URLPath: URL? {
+         URL(string: requestURL, relativeTo: URL(string: BaseURL.baseURL))
+    }
+    
     func buildRequest() throws -> URLRequest {
-        guard let url = URL(string: requestURL) else {
+        guard let url = URLPath else {
             throw WeatherAPIError.badURL
         }
         let urlRequest = URLRequest(url: url)
