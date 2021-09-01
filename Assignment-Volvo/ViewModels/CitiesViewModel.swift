@@ -11,20 +11,13 @@ class CitiesViewModel {
 
     
     /// Description - City objects to display the names on list.
-    var citites: [City] = City.cities
+//    var citites: [City] = City.cities
     
-    
+    let dispatchGroup = DispatchGroup()
+
     /// read-only object
     var tomorrowWeatherForecast: ConsolidatedWeather? {get {weather}}
     var weather: ConsolidatedWeather?
-    
-    
-    /// Description - responsible to return locaion selected on tableView.
-    /// - Parameter selectedIndex: selected UITable View index
-    /// - Returns: city location object
-    func getlocationMetaDataForSelectedCity(selectedIndex: Int) -> CityLocationData? {
-        return AssignmentAppGlobal.global.cityLocations.first (where: {$0.title == citites[selectedIndex].cityName})
-    }
     
     
     /// Description - responsible to fetch the weather forecast data.
@@ -43,4 +36,42 @@ class CitiesViewModel {
             }
         }
     }
+    
+    var locations: [CityLocationData] = []
+    
+    func getLocations(completion: @escaping () -> ()) {
+         let cities: [String] =
+               [
+                "Gothenburg",
+                "Stockholm",
+                "Mountain View",
+               "London",
+                "New York",
+                "Berlin"
+                ]
+        
+       let _ = cities.map { city in
+            dispatchGroup.enter()
+            getLocationDetailsByCityName(cityName: city)
+        }
+        
+        dispatchGroup.notify(queue: .main) {
+            completion()
+        }
+    }
+    
+    private func getLocationDetailsByCityName(cityName: String) {
+       let locationSearchUrl = "https://www.metaweather.com/api/location/search/?query=\(cityName)".encodedURLString!
+       print(locationSearchUrl)
+      ServiceManager.shared().startRequest(service: CityLocationDataService(with: locationSearchUrl)) { [weak self] (result) in
+          switch(result) {
+          case .success(let locationResponse):
+            self?.locations.append(contentsOf: locationResponse)
+           self?.dispatchGroup.leave()
+          case .failure(let error):
+           self?.dispatchGroup.leave()
+              print(error)
+          }
+      }
+   }
 }

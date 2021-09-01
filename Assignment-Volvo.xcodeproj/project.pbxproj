@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE200AEF26D77E4900451BA2 /* AssignmentAppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */; };
 		CE200AFB26D7D37100451BA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200AFA26D7D37100451BA2 /* Utilities.swift */; };
-		CE200B0426D7E52900451BA2 /* AppDelegate+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE200B0326D7E52900451BA2 /* AppDelegate+Location.swift */; };
 		CEB1A8AD26D7F888009FD4DE /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */; };
 		CEB1A8E326D7FE25009FD4DE /* Assignment_VolvoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8E226D7FE25009FD4DE /* Assignment_VolvoTests.swift */; };
 		CEB1A8ED26D8011C009FD4DE /* AssignmentTestingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1A8EC26D8011C009FD4DE /* AssignmentTestingHelper.swift */; };
@@ -46,7 +45,6 @@
 		690CAF2E690E44A1F7916B3A /* Pods-Assignment-Volvo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment-Volvo.release.xcconfig"; path = "Target Support Files/Pods-Assignment-Volvo/Pods-Assignment-Volvo.release.xcconfig"; sourceTree = "<group>"; };
 		CE200AEE26D77E4900451BA2 /* AssignmentAppGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAppGlobal.swift; sourceTree = "<group>"; };
 		CE200AFA26D7D37100451BA2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		CE200B0326D7E52900451BA2 /* AppDelegate+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Location.swift"; sourceTree = "<group>"; };
 		CEB1A8AC26D7F888009FD4DE /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		CEB1A8E026D7FE25009FD4DE /* Assignment-VolvoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment-VolvoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1A8E226D7FE25009FD4DE /* Assignment_VolvoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_VolvoTests.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 			children = (
 				CEB586B626D66F00005C1065 /* SceneDelegate.swift */,
 				CEB586B426D66F00005C1065 /* AppDelegate.swift */,
-				CE200B0326D7E52900451BA2 /* AppDelegate+Location.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE200B0426D7E52900451BA2 /* AppDelegate+Location.swift in Sources */,
 				CE200AEF26D77E4900451BA2 /* AssignmentAppGlobal.swift in Sources */,
 				CEB586B926D66F00005C1065 /* CitiesViewController.swift in Sources */,
 				CEB586CE26D6709D005C1065 /* City.swift in Sources */,

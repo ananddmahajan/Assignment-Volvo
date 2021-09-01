@@ -10,8 +10,8 @@ import KRProgressHUD
 
 class CitiesViewController: UITableViewController {
     
-    typealias DataSource = UITableViewDiffableDataSource<Section, City>
-    typealias DataSourceSnapShot = NSDiffableDataSourceSnapshot<Section, City>
+    typealias DataSource = UITableViewDiffableDataSource<Section, CityLocationData>
+    typealias DataSourceSnapShot = NSDiffableDataSourceSnapshot<Section, CityLocationData>
     
     private var dataSource: DataSource?
     let viewModel = CitiesViewModel()
@@ -19,8 +19,8 @@ class CitiesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadLocations()
         makeTableViewDataSource()
-        applySnapshot()
     }
     
     
@@ -34,29 +34,38 @@ class CitiesViewController: UITableViewController {
 }
 
 extension CitiesViewController {
-    
-    /// Description - table view delegate method
- 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+    /// Description load locations
+    private func loadLocations() {
         KRProgressHUD.show()
-        let weather = viewModel.getlocationMetaDataForSelectedCity(selectedIndex: indexPath.row)
-        if let earthId = weather?.earthId {
-            viewModel.getWeatherForecastOfDate(with: earthId) { [weak self] (error) in
-                if let error = error {
-                    self?.removeHUD()
-                    DispatchQueue.main.async {
-                        self?.displayErrorMessage(errMessage: error.errorDescription ?? "")
-                    }
-                } else {
-                    self?.removeHUD()
-                    DispatchQueue.main.async {
-                        self?.showWeatherForecastDetailsForTomorrow()
-                    }
-                }
+        viewModel.getLocations { [weak self] in
+            DispatchQueue.main.async {
+                self?.applySnapshot()
+                KRProgressHUD.dismiss()
             }
         }
     }
+    
+    /// Description - get weather forecast data for selected city
+    /// - Parameter index: selected city index
+    private func getWeatherForecast(index: Int) {
+           
+            KRProgressHUD.show()
+            let weather = viewModel.locations[index]
+            
+                viewModel.getWeatherForecastOfDate(with: weather.earthId) { [weak self] (error) in
+                    if let error = error {
+                        self?.removeHUD()
+                        DispatchQueue.main.async {
+                            self?.displayErrorMessage(errMessage: error.errorDescription ?? "")
+                        }
+                    } else {
+                        self?.removeHUD()
+                        DispatchQueue.main.async {
+                            self?.showWeatherForecastDetailsForTomorrow()
+                        }
+                    }
+                }
+        }
 }
 
 extension CitiesViewController {
@@ -65,7 +74,8 @@ extension CitiesViewController {
     private func makeTableViewDataSource() {
          dataSource = DataSource(tableView: self.tableView) { [weak self] (tableView, indexPath, city) -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(withIdentifier: "citiesIdentifier", for: indexPath)
-            cell.textLabel?.text = self?.viewModel.citites[indexPath.row].cityName
+            //cell.textLabel?.text = self?.viewModel.citites[indexPath.row].cityName
+            cell.textLabel?.text = self?.viewModel.locations[indexPath.row].title
             return cell
         }
     }
@@ -74,8 +84,14 @@ extension CitiesViewController {
     private func applySnapshot(animation: Bool = true) {
         var snapShot = DataSourceSnapShot()
         snapShot.appendSections([.main])
-        snapShot.appendItems(self.viewModel.citites)
+        snapShot.appendItems(self.viewModel.locations)
         dataSource?.apply(snapShot, animatingDifferences: animation, completion: nil)
+    }
+    
+    /// Description - table view delegate method
+ 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        getWeatherForecast(index: indexPath.row)
     }
 }
 extension CitiesViewController {

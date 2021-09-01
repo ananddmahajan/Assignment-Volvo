@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let dispatchGroup = DispatchGroup()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            getLocationsOfListedCities()
         // Override point for customization after application launch.
         return true
     }

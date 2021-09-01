@@ -8,24 +8,6 @@
 import Foundation
 
 
-/// Description - City data model responsible to display city name on first screen.
-struct City: Hashable {
-    let id = UUID()
-    let cityName: String
-}
-extension City {
-    static let cities: [City] =
-           [
-            City(cityName: "Gothenburg"),
-            City(cityName: "Stockholm"),
-            City(cityName: "Mountain View"),
-            City(cityName: "London"),
-            City(cityName: "New York"),
-            City(cityName: "Berlin")
-            ]
-}
-
-
 /// Description - data model to store locaiton information.
 struct CityLocationData: Decodable, Hashable {
     let title: String
